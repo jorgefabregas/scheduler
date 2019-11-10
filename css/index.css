@@ -5,6 +5,7 @@ body {
   }
   
   .course {
+    width: 30%;
     background-color: #fff;
     padding: 0 1em;
     overflow: hidden;

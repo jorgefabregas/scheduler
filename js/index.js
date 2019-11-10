@@ -40,9 +40,10 @@ LAB:
 */
 
 function getDurationFromMinutes(minutes) {
+  const hrs = Math.floor (minutes/60);
+  const mins = minutes - hrs * 60;
 
-
-  return `H hr, M min`;
+  return `${hrs} hr, ${mins} min`;
 }
 
-getDurationFromMinutes(160);  // 2 hr, 40 min
+getDurationFromMinutes(160) = hrs + mins;  // 2 hr, 40 min
