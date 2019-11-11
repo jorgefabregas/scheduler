@@ -46,4 +46,4 @@ function getDurationFromMinutes(minutes) {
   return `${hrs} hr, ${mins} min`;
 }
 
-getDurationFromMinutes(160) = hrs + mins;  // 2 hr, 40 min
+getDurationFromMinutes(160);  // 2 hr, 40 min
