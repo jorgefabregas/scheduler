@@ -1,28 +1,32 @@
-const courseName = `Tools and Workflow`;
-const courseCode = `WDDM-115`;
-const courseInstructor = `Kadeem Best`;
-const courseStart = `Fall 2019`;
-const courseWeeks = 15; // 1 class per week (assumed)
-const courseBreaks = true; // Boolean
-const courseDuration = 160; // Minutes per class
+
+const allCourses = [
+  {
+    name: `Tools and Workflow`,
+    code: `WDDM-115`,
+    instructor: `Kadeem Best`,
+    start: { term: `Fall`, year: 2019 },
+    weeks: 15,
+    breaks: true,
+    duration: 160  
+  },
+  {
+    name: `Planning and Prototype`,
+    code: `WDDM-117`,
+    instructor: `Cory Coletta`,
+    start: { term: `Fall`, year: 2019 },
+    weeks: 15,
+    breaks: true,
+    duration: 160,  
+  }
+]
 
 
-const course = {
-  name: `Tools and Workflow`,
-  code: `WDDM-115`,
-  instructor: `Kadeem Best`,
-  start: { term: `Fall`, year: 2019 },
-  weeks: 15,
-  breaks: true,
-  duration: 160
-};
-
-document.getElementById(`name`).innerHTML = course.name;
-document.getElementById(`code`).innerHTML = course.code;
-document.getElementById(`instructor`).innerHTML = course.instructor;
-document.getElementById(`start`).innerHTML = course.start;
-document.getElementById(`weeks`).innerHTML = course.weeks;
-document.getElementById(`duration`).innerHTML = course.duration;
+document.getElementById(`name`).innerHTML = allCourses[1].name;
+document.getElementById(`code`).innerHTML = allCourses[1].code;
+document.getElementById(`instructor`).innerHTML = allCourses[1].instructor;
+document.getElementById(`start`).innerHTML = allCourses[1].start;
+document.getElementById(`weeks`).innerHTML = allCourses[1].weeks;
+document.getElementById(`duration`).innerHTML = allCourses[1].duration;
 
 /*
 LAB:
@@ -41,9 +45,12 @@ LAB:
 
 function getDurationFromMinutes(minutes) {
   const hrs = Math.floor (minutes/60);
-  const mins = minutes - hrs * 60;
+  const mins = duration - hrs * 60;
 
   return `${hrs} hr, ${mins} min`;
 }
 
 getDurationFromMinutes(160);  // 2 hr, 40 min
+
+
+
