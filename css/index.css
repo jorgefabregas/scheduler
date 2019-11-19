@@ -1,13 +1,14 @@
 body {
-    background-color: #ddd;
-    color: #111;
-    font: 1em helvetica, arial, sans-serif;
-  }
-  
-  .course1 {
-    width: 30%;
-    background-color: #fff;
-    padding: 0 1em;
-    overflow: hidden;
-    box-shadow: 0 0 1em rgba(0,0,0,0.4);
-  }
+  background-color: #ddd;
+  color: #111;
+  font: 1em helvetica, arial, sans-serif;
+  width: 20%;
+}
+
+.course {
+  background-color: #fff;
+  padding: 0 1em;
+  overflow: hidden;
+  box-shadow: 0 0 1em rgba(0,0,0,0.4);
+  margin: 1em 0;
+}
