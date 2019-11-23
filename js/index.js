@@ -93,4 +93,3 @@ document.getElementById('courses').innerHTML =
   allCourses.map(getCourseAsHtmlString).join('\n')
 
 
-

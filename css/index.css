@@ -2,7 +2,7 @@ body {
   background-color: #ddd;
   color: #111;
   font: 1em helvetica, arial, sans-serif;
-  width: 20%;
+  width: auto;
 }
 
 .course {
@@ -11,4 +11,7 @@ body {
   overflow: hidden;
   box-shadow: 0 0 1em rgba(0,0,0,0.4);
   margin: 1em 0;
+}
+.allcourses {
+  width: 50%;
 }
