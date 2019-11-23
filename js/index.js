@@ -56,7 +56,7 @@ function getDurationFromMinutes(minutes) {
 function getCourseAsHtmlString(course) {
   return `
     <article class="course">
-      <h3 id="name">${course.name}</h3>
+      <h3 id="name">${course.name}</h3> 
       <ul>
         <li>Course Code: <strong>${course.code}</strong></li>
         <li>Instructor: <strong>${course.instructor}</strong></li>
@@ -92,4 +92,9 @@ function getCourseAsHtmlString(course) {
 document.getElementById('courses').innerHTML = 
   allCourses.map(getCourseAsHtmlString).join('\n')
 
+var courseBtn = document.getElementById ("coursesbtn");
+var courses = document.getElementById ("courses");
 
+courseBtn.addEventListener ("click", function (){
+  courses.classList.toggle ("show")
+})

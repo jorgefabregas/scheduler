@@ -14,4 +14,9 @@ body {
 }
 .allcourses {
   width: 50%;
+  position: absolute;
+  left: -100%;
+}
+.show {
+  left: 0;
 }
